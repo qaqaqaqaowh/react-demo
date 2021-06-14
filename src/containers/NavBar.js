@@ -3,7 +3,7 @@ import SignUpModal from './SignUpModal'
 import {useState} from 'react'
 import {useHistory} from 'react-router-dom'
 
-export default () => {
+const Navbar = () => {
 	const [isOpen, changeOpen] = useState(false)
 	const [isLoginModal, changeLoginModal] = useState(true)
 	const [loggedIn, changeLoggedIn] = useState(localStorage.getItem("token") ? true : false)
@@ -61,3 +61,5 @@ export default () => {
 		</div>
 	)
 }
+
+export default Navbar

@@ -1,5 +1,4 @@
 import { Route } from "react-router-dom";
-import { useState } from 'react';
 import NavBar from './containers/NavBar'
 import UserProfile from './containers/UserProfile'
 

@@ -2,7 +2,7 @@ import axios from 'axios'
 import {useParams, useHistory} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 
-export default () => {
+const UserProfile = () => {
 	const {id} = useParams()
 	const [user, setUser] = useState(null)
 	const history = useHistory()
@@ -29,3 +29,5 @@ export default () => {
 		return user.username
 	}
 }
+
+export default UserProfile
