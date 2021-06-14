@@ -8,7 +8,7 @@ const UserProfile = () => {
 	const history = useHistory()
 
 	useEffect(() => {
-		if (id == "me" && localStorage.getItem("token")) {
+		if (id === "me" && localStorage.getItem("token")) {
 			axios.get("https://insta.nextacademy.com/api/v1/users/me", {
 				headers: {
 					Authorization: "Bearer " + localStorage.getItem("token")
@@ -21,7 +21,7 @@ const UserProfile = () => {
 		} else {
 			history.push("/")
 		}
-	}, [])
+	}, [id])
 
 	if (!user) {
 		return "Profile"
