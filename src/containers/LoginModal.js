@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import axios from 'axios'
 
-export default ({close, storeSession}) => {
+const LoginModal = ({close, storeSession}) => {
 	const [username, changeUsername] = useState("")
 	const [password, changePassword] = useState("")
 
@@ -23,3 +23,5 @@ export default ({close, storeSession}) => {
 		</div>
 	)
 }
+
+export default LoginModal

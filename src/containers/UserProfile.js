@@ -21,7 +21,7 @@ const UserProfile = () => {
 		} else {
 			history.push("/")
 		}
-	}, [id])
+	}, [id, history])
 
 	if (!user) {
 		return "Profile"
